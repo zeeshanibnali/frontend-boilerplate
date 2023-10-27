@@ -20,6 +20,9 @@ dependencies:
   "@mui/styled-engine-sc":
     specifier: 6.0.0-alpha.3
     version: 6.0.0-alpha.3(styled-components@6.1.0)
+  add:
+    specifier: ^2.0.6
+    version: 2.0.6
   next:
     specifier: 14.0.0
     version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
@@ -32,6 +35,9 @@ dependencies:
   styled-components:
     specifier: ^6.1.0
     version: 6.1.0(react-dom@18.2.0)(react@18.2.0)
+  zustand:
+    specifier: ^4.4.4
+    version: 4.4.4(@types/react@18.2.33)(react@18.2.0)
 
 devDependencies:
   "@types/node":
@@ -966,6 +972,13 @@ packages:
     engines: { node: ">=0.4.0" }
     hasBin: true
     dev: true
+
+  /add@2.0.6:
+    resolution:
+      {
+        integrity: sha512-j5QzrmsokwWWp6kUcJQySpbG+xfOBqqKnup3OIk1pz+kB/80SLorZ9V8zHFLO92Lcd+hbvq8bT+zOGoPkmBV0Q==,
+      }
+    dev: false
 
   /ajv@6.12.6:
     resolution:
@@ -4165,6 +4178,17 @@ packages:
       punycode: 2.3.0
     dev: true
 
+  /use-sync-external-store@1.2.0(react@18.2.0):
+    resolution:
+      {
+        integrity: sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA==,
+      }
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+    dev: false
+
   /watchpack@2.4.0:
     resolution:
       {
@@ -4296,3 +4320,26 @@ packages:
       }
     engines: { node: ">=10" }
     dev: true
+
+  /zustand@4.4.4(@types/react@18.2.33)(react@18.2.0):
+    resolution:
+      {
+        integrity: sha512-5UTUIAiHMNf5+mFp7/AnzJXS7+XxktULFN0+D1sCiZWyX7ZG+AQpqs2qpYrynRij4QvoDdCD+U+bmg/cG3Ucxw==,
+      }
+    engines: { node: ">=12.7.0" }
+    peerDependencies:
+      "@types/react": ">=16.8"
+      immer: ">=9.0"
+      react: ">=16.8"
+    peerDependenciesMeta:
+      "@types/react":
+        optional: true
+      immer:
+        optional: true
+      react:
+        optional: true
+    dependencies:
+      "@types/react": 18.2.33
+      react: 18.2.0
+      use-sync-external-store: 1.2.0(react@18.2.0)
+    dev: false
